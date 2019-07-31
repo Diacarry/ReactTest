@@ -1,12 +1,12 @@
-import React from 'react';
+    import React from 'react';
 
 class Formulario extends React.Component {
-    state = {};
-    cajita = e => {
+    /*state = {};*/
+    /*cajita = e => {
         this.setState({
             [e.target.name]: e.target.value
         });
-    }
+    }*/
     botoncillo = e => {
         console.log('Boton aprimido');
     }
@@ -18,9 +18,9 @@ class Formulario extends React.Component {
     render() {
         return (
             <form onSubmit={this.formulario}>
-                <input onChange={this.cajita} type="text" name='variableA' value={this.state.variableA} />
-                <input onChange={this.cajita} type="text" name='variableB' value={this.state.variableB} />
-                <input onChange={this.cajita} type="text" name='variableC' value={this.state.variableC} />
+                <input onChange={this.props.cambiosForm} type="text" name='variableA' value={this.props.formValues.variableA} />
+                <input onChange={this.props.cambiosForm} type="text" name='variableB' value={this.props.formValues.variableB} />
+                <input onChange={this.props.cambiosForm} type="text" name='variableC' value={this.props.formValues.variableC} />
                 <button onClick={this.botoncillo}>XD</button>
             </form>
         )

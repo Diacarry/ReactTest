@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Prueba from './../components/prueba';
+import Form from './../components/forms/formulario';
 
 class About extends React.Component {
     render() {
@@ -8,8 +9,8 @@ class About extends React.Component {
             <div>
                 <p>COMA</p>
                 <Prueba saludo="Mierda!" />
-                <p>Severo</p>
-                <Prueba saludo="GIL" />
+                <p>Formulario</p>
+                <Form />
             </div>
         )
     }

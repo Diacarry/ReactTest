@@ -1,23 +1,26 @@
 import React from 'react';
 
 class Formulario extends React.Component {
-    cajita = (e) => {
-        console.log('XD => '+JSON.stringify({
-            a: e.target.value,
-            b: e.target.name
-        }));
+    state = {};
+    cajita = e => {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
     }
-    botoncillo = (e) => {
+    botoncillo = e => {
         console.log('Boton aprimido');
     }
-    formulario = (e) => {
+    formulario = e => {
         e.preventDefault();
-        console.log('Entro a funcion de envio de formulario que no envia nada aun XD');
+        console.log('Esto es lo que se tiene guardado en State');
+        console.log(JSON.stringify(this.state));
     }
     render() {
         return (
             <form onSubmit={this.formulario}>
-                <input onChange={this.cajita} name='variableA' />
+                <input onChange={this.cajita} type="text" name='variableA' value={this.state.variableA} />
+                <input onChange={this.cajita} type="text" name='variableB' value={this.state.variableB} />
+                <input onChange={this.cajita} type="text" name='variableC' value={this.state.variableC} />
                 <button onClick={this.botoncillo}>XD</button>
             </form>
         )

@@ -5,8 +5,7 @@ import Form from './../components/forms/formulario';
 
 class About extends React.Component {
     render() {
-        return (
-            <div>
+        return (<div>
                 <p>COMA</p>
                 <Prueba saludo="Mierda!" />
                 <p>Formulario</p>

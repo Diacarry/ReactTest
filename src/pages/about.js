@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Prueba from './../components/prueba';
 import Form from './../components/forms/formulario';
@@ -24,7 +25,8 @@ class About extends React.Component {
     }
     render() {
         return (<div>
-                <p>COMA</p>
+                <p>Ir a</p>
+                <Link to="/Contact" className="btn btn-success">Contacto</Link>
                 <Prueba
                     saludo="Mierda!"
                     variableA={this.state.form.variableA}

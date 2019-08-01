@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Listado from './../components/general/lists';
 
@@ -40,6 +41,8 @@ class Contact extends React.Component {
     render() {
         return (
             <div>
+                <p>Ir a</p>
+                <Link to="/About" className="btn btn-primary">About</Link>
                 <h2>Pagina de contacto</h2>
                 <p>aca deben ir mas cosas</p>
                 <Listado info={this.state.data} />

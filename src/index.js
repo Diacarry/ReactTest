@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-//import About from './pages/about';
-import Contact from './pages/contact';
+import 'bootstrap/dist/css/bootstrap.css';
+
+import Rutas from './components/route/rutas';
 
 const contenedor = document.getElementById('root');
 
-//ReactDOM.render(<About />, contenedor);
-ReactDOM.render(<Contact />, contenedor);
+ReactDOM.render(<Rutas />, contenedor);

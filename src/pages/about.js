@@ -24,7 +24,8 @@ class About extends React.Component {
         });
     }
     render() {
-        return (<div>
+        return (
+            <React.Fragment>
                 <p>Ir a</p>
                 <Link to="/Contact" className="btn btn-success">Contacto</Link>
                 <Prueba
@@ -38,7 +39,7 @@ class About extends React.Component {
                     cambiosForm={this.CambioFormulario}
                     formValues={this.state.form}
                 />
-            </div>
+            </React.Fragment>
         )
     }
 }

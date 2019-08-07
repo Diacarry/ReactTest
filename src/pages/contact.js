@@ -40,14 +40,14 @@ class Contact extends React.Component {
     };
     render() {
         return (
-            <div>
+            <React.Fragment>
                 <p>Ir a</p>
                 <Link to="/About" className="btn btn-primary">About</Link>
                 <h2>Pagina de contacto</h2>
                 <p>aca deben ir mas cosas</p>
                 <Listado info={this.state.data} />
                 
-            </div>
+            </React.Fragment>
         )
     }
 }

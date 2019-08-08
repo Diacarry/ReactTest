@@ -4,7 +4,7 @@ class Footer extends React.Component {
     render() {
       return (
         <React.Fragment>
-          Derechos de autor "diacarry"
+          <p>Derechos de autor "diacarry"</p>
         </React.Fragment>
       );
     }

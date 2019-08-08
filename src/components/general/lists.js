@@ -4,10 +4,10 @@ class List extends React.Component {
     render() {
         return (
             <ul>
-                {this.props.info.map((user) => {
+                {this.props.info.map((character) => {
                     return (
-                        <li key={user.id}>
-                            <p>{user.twitter}</p>
+                        <li key={character.id}>
+                            <p>{character.name} - {character.image}</p>
                         </li>
                     )
                 })}
